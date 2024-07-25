@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red */
+}
+
+header {
+    background-image: url(../public/SLIDE_05.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 73% 100%, 48% 94%, 25% 100%, 0 100%, 0% 85%);
+
+}
+
+button {
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.btn1::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+
+    position: absolute;
+    top: 0;
+    left: -110%;
+    background-color: white;
+    z-index: -1;
+    transition: .2s;
+}
+
+.btn1:hover:after {
+    left: 0;
+    transition: .5s all;
+    color: black;
+}
+
+.washerCard i {
+    font-size: 4rem;
+    color: red;
+}
+
+/* .washerCard{
+    border-right: 1px solid grey;
+} */
+.washerCard:hover i {
+    position: relative;
+    bottom: 0.5rem;
+    cursor: pointer;
+
+}
+
+.premium {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(../public/carbon_BG-20.png);
+    height: 120vh;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 73% 100%, 48% 94%, 25% 100%, 0 100%, 0% 85%);
+
+}
+
+.pricingcard {
+    box-shadow: 0 0 32px 2px rgb(195, 195, 195);
+    border-radius: 10px;
+}
+
+.pricingcard:hover {
+    box-shadow: none;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.discount {
+    clip-path: polygon(0% 15%, 32% 15%, 50% 0, 51% 0, 71% 14%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+
+}
+
+.credit1:hover {
+    top: -42px;
+    transition: 1s !important;
+}
+
+.credit2:hover {
+    top: -60px;
+    transition: 1s;
+}
+
+.map {
+    height: 80%;
+    background-image: url(../public/map-bg.png);
+}
+
+.carepoint i {
+    color: red;
+}
+
+.carepoint:hover .points {
+    color: red;
+}
+
+.carepoint:hover i {
+    font-size: 1.3rem;
+    transition: 0.3s;
+}
+
+.inputs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(../public/carbon_BG-20.png);
+    height: 100%;
+
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)), url(../public/testimonials_parallax.jpg);
+    height: 80vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+footer {
+    /* height: 60vh; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(../public/carbon_BG-20.png);
+}
